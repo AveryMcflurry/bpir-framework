@@ -37,3 +37,41 @@ Methods for the exact experimental settings.
 
 Ma, Rashidi and Najmi (2026), BPIR framework,
 https://github.com/AveryMcflurry/bpir-framework
+
+
+## System requirements
+
+Python 3.9 or later with `numpy`; `cma` is optional but recommended (it enables
+the CMA-ES engine). Pure Python, no non-standard hardware; any OS. Tested with
+Python 3.10 on Windows 11.
+
+## Installation guide
+
+```
+git clone https://github.com/AveryMcflurry/bpir-framework
+cd bpir-framework
+pip install numpy cma
+```
+
+Typical install time on a normal desktop computer: under one minute.
+
+## Demo
+
+```
+python examples/demo.py
+```
+
+The demo optimises bounded attribute weights against a small synthetic
+simulator (no data required). Expected output: the composite score printed at
+baseline, rising above 95 after 30 iterations, followed by the learned weight
+factors. Expected run time: seconds on a normal desktop computer.
+
+## Instructions for use
+
+Each mechanism takes a `simulate(inputs) -> trips` callable and a
+`score(trips) -> float` objective. To run on your own model, implement
+`simulate` around your ABM (the paper uses ActivitySim), build the composite
+objective from your observed targets with `bpir/objective.py`, and call the
+mechanism loops in `bpir/pws.py`, `bpir/spe.py` or `bpir/hdr.py`. The
+preprocessed author-built Melbourne inputs accompany this repository; the
+VITM model and its inputs are confidential and not included.
