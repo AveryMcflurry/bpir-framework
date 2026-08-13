@@ -1,0 +1,20 @@
+# Exact environment used for every experiment in the paper.
+#   conda env create -f environment.yml && conda activate bpir
+# Typical install time on a normal desktop computer: 10-15 minutes.
+# Tested on Windows 11 (10.0.26xxx); the stack is pure Python + conda-forge
+# binaries and has no OS-specific code. No non-standard hardware is required
+# (peak RAM 8.5 GB for the full-scale San Francisco runs; 1 GB for Melbourne).
+name: bpir
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.18
+  - pip
+  - numpy=1.23.0
+  - pandas=2.0.0
+  - scikit-learn=1.2.2
+  - pytables=3.6.1
+  - psutil
+  - pip:
+      - activitysim==1.1.2
+      - openmatrix==0.3.3

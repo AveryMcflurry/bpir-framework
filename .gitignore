@@ -1,3 +1,14 @@
 __pycache__/
 *.pyc
-.DS_Store
+# run-time work areas created by the drivers (never committed)
+experiments/HDR_Revise/baseline_check/
+experiments/HDR_Revise/hdr_run/
+experiments/HDR_Revise/spe_run/
+experiments/HDR_Revise/mtc_run/
+experiments/HDR_Revise/mtc_full_run/data_*
+experiments/HDR_Revise/mtc_full_run/output_*
+experiments/HDR_Revise/mtc_full_run/mtcfull_*
+experiments/HDR_Revise/baseline_build/
+experiments/examples/
+*.log
+costs.jsonl

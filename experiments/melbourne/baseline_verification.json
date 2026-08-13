@@ -1,0 +1,18 @@
+{
+  "mode": "exact (no optimisation)",
+  "fidelity_to_paper_baseline": 99.96,
+  "trip_rate": 9.14,
+  "composite_7mode": 58.19,
+  "composite_5mode": 59.8,
+  "reference_same_subsample": {
+    "composite_5mode_weighted_form": 59.75,
+    "note": "the weighted-columns baseline scored 59.75 (5-mode) on this same 5000-hh subsample; full-population values are 57.46 / 58.97"
+  },
+  "paper_baseline": {
+    "composite_7mode": 57.46,
+    "composite_5mode": 58.97,
+    "trip_rate": 9.195
+  },
+  "configs": "MainTrain/configs_mel deposited UNCHANGED (no coefficient edits)",
+  "note": "income/land-use/skims baked into VALUES (w_income=1); per-cluster CDAP work/nonmand and VOT carried in the framework's own columns \u2014 the k-means segmentation is the data format the correction step requires."
+}

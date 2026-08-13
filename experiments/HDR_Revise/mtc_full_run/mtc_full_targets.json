@@ -1,0 +1,31 @@
+{
+  "description": "Observed San Francisco Bay Area targets for BPIR on the full-scale MTC model",
+  "source": "MTC Travel Model One v0.3 Calibration & Validation Technical Report (DRAFT May 17 2012): Table 55 'Number of Trips - Target' (BATS-2000-scaled observed trips by trip mode x tour purpose); Table 8 (Year 2000 households, nine-county Bay Area)",
+  "observed_year": 2000,
+  "n_households_observed": 2466017,
+  "n_trips_observed": 22206335,
+  "trip_rate": 9.00494,
+  "purpose_probabilities": {
+    "work": 0.335239,
+    "school": 0.136867,
+    "escort": 0.095282,
+    "shopping": 0.126053,
+    "eatout": 0.039386,
+    "othmaint": 0.066538,
+    "social": 0.027705,
+    "othdiscr": 0.17293
+  },
+  "mode_probabilities": {
+    "Private Vehicle - Driver": 0.508523,
+    "Private Vehicle - Passenger": 0.318932,
+    "Walking & Active Transport": 0.101105,
+    "Cycling": 0.011336,
+    "Public Transit": 0.060104
+  },
+  "scoring_conventions": [
+    "purpose scored on final_trips.primary_purpose (tour purpose) - matches the report's tour-purpose accounting; no 'home' category",
+    "college+school -> school; atwork -> othdiscr (same PURPOSE_MAPPING as the paper)",
+    "modes aggregated to the paper's five categories; DA->Driver, SR2+SR3+->Passenger, Walk, Bike, all transit submodes->Public Transit; ride-hail/taxi excluded from the mode marginal (not in 2000 observations)",
+    "identical Eq.(1) composite: w=0.25/0.40/0.35, alpha_trip=2.0, alpha_dist=4.0"
+  ]
+}

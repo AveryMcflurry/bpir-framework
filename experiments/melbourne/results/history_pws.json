@@ -1,0 +1,378 @@
+[
+  {
+    "iter": 0,
+    "composite": 58.974,
+    "best": 58.974,
+    "note": "baseline (uniform weights)"
+  },
+  {
+    "iter": 1,
+    "composite": 59.107,
+    "best": 59.107
+  },
+  {
+    "iter": 2,
+    "composite": 59.239,
+    "best": 59.239
+  },
+  {
+    "iter": 3,
+    "composite": 59.371,
+    "best": 59.371
+  },
+  {
+    "iter": 4,
+    "composite": 59.502,
+    "best": 59.502
+  },
+  {
+    "iter": 5,
+    "composite": 59.633,
+    "best": 59.633
+  },
+  {
+    "iter": 6,
+    "composite": 59.763,
+    "best": 59.763
+  },
+  {
+    "iter": 7,
+    "composite": 59.892,
+    "best": 59.892
+  },
+  {
+    "iter": 8,
+    "composite": 60.021,
+    "best": 60.021
+  },
+  {
+    "iter": 9,
+    "composite": 60.149,
+    "best": 60.149
+  },
+  {
+    "iter": 10,
+    "composite": 60.277,
+    "best": 60.277
+  },
+  {
+    "iter": 11,
+    "composite": 60.404,
+    "best": 60.404
+  },
+  {
+    "iter": 12,
+    "composite": 60.53,
+    "best": 60.53
+  },
+  {
+    "iter": 13,
+    "composite": 60.656,
+    "best": 60.656
+  },
+  {
+    "iter": 14,
+    "composite": 60.781,
+    "best": 60.781
+  },
+  {
+    "iter": 15,
+    "composite": 60.905,
+    "best": 60.905
+  },
+  {
+    "iter": 16,
+    "composite": 61.029,
+    "best": 61.029
+  },
+  {
+    "iter": 17,
+    "composite": 61.152,
+    "best": 61.152
+  },
+  {
+    "iter": 18,
+    "composite": 61.274,
+    "best": 61.274
+  },
+  {
+    "iter": 19,
+    "composite": 61.396,
+    "best": 61.396
+  },
+  {
+    "iter": 20,
+    "composite": 61.517,
+    "best": 61.517
+  },
+  {
+    "iter": 21,
+    "composite": 61.637,
+    "best": 61.637
+  },
+  {
+    "iter": 22,
+    "composite": 61.757,
+    "best": 61.757
+  },
+  {
+    "iter": 23,
+    "composite": 61.876,
+    "best": 61.876
+  },
+  {
+    "iter": 24,
+    "composite": 61.994,
+    "best": 61.994
+  },
+  {
+    "iter": 25,
+    "composite": 62.111,
+    "best": 62.111
+  },
+  {
+    "iter": 26,
+    "composite": 62.228,
+    "best": 62.228
+  },
+  {
+    "iter": 27,
+    "composite": 62.343,
+    "best": 62.343
+  },
+  {
+    "iter": 28,
+    "composite": 62.458,
+    "best": 62.458
+  },
+  {
+    "iter": 29,
+    "composite": 62.573,
+    "best": 62.573
+  },
+  {
+    "iter": 30,
+    "composite": 62.686,
+    "best": 62.686
+  },
+  {
+    "iter": 31,
+    "composite": 62.799,
+    "best": 62.799
+  },
+  {
+    "iter": 32,
+    "composite": 62.91,
+    "best": 62.91
+  },
+  {
+    "iter": 33,
+    "composite": 63.021,
+    "best": 63.021
+  },
+  {
+    "iter": 34,
+    "composite": 63.131,
+    "best": 63.131
+  },
+  {
+    "iter": 35,
+    "composite": 63.24,
+    "best": 63.24
+  },
+  {
+    "iter": 36,
+    "composite": 63.348,
+    "best": 63.348
+  },
+  {
+    "iter": 37,
+    "composite": 63.456,
+    "best": 63.456
+  },
+  {
+    "iter": 38,
+    "composite": 63.562,
+    "best": 63.562
+  },
+  {
+    "iter": 39,
+    "composite": 63.667,
+    "best": 63.667
+  },
+  {
+    "iter": 40,
+    "composite": 63.772,
+    "best": 63.772
+  },
+  {
+    "iter": 41,
+    "composite": 63.875,
+    "best": 63.875
+  },
+  {
+    "iter": 42,
+    "composite": 63.977,
+    "best": 63.977
+  },
+  {
+    "iter": 43,
+    "composite": 64.079,
+    "best": 64.079
+  },
+  {
+    "iter": 44,
+    "composite": 64.179,
+    "best": 64.179
+  },
+  {
+    "iter": 45,
+    "composite": 64.278,
+    "best": 64.278
+  },
+  {
+    "iter": 46,
+    "composite": 64.376,
+    "best": 64.376
+  },
+  {
+    "iter": 47,
+    "composite": 64.473,
+    "best": 64.473
+  },
+  {
+    "iter": 48,
+    "composite": 64.568,
+    "best": 64.568
+  },
+  {
+    "iter": 49,
+    "composite": 64.663,
+    "best": 64.663
+  },
+  {
+    "iter": 50,
+    "composite": 64.756,
+    "best": 64.756
+  },
+  {
+    "iter": 51,
+    "composite": 64.848,
+    "best": 64.848
+  },
+  {
+    "iter": 52,
+    "composite": 64.938,
+    "best": 64.938
+  },
+  {
+    "iter": 53,
+    "composite": 65.027,
+    "best": 65.027
+  },
+  {
+    "iter": 54,
+    "composite": 65.115,
+    "best": 65.115
+  },
+  {
+    "iter": 55,
+    "composite": 65.201,
+    "best": 65.201
+  },
+  {
+    "iter": 56,
+    "composite": 65.285,
+    "best": 65.285
+  },
+  {
+    "iter": 57,
+    "composite": 65.368,
+    "best": 65.368
+  },
+  {
+    "iter": 58,
+    "composite": 65.449,
+    "best": 65.449
+  },
+  {
+    "iter": 59,
+    "composite": 65.528,
+    "best": 65.528
+  },
+  {
+    "iter": 60,
+    "composite": 65.605,
+    "best": 65.605
+  },
+  {
+    "iter": 61,
+    "composite": 65.68,
+    "best": 65.68
+  },
+  {
+    "iter": 62,
+    "composite": 65.753,
+    "best": 65.753
+  },
+  {
+    "iter": 63,
+    "composite": 65.823,
+    "best": 65.823
+  },
+  {
+    "iter": 64,
+    "composite": 65.891,
+    "best": 65.891
+  },
+  {
+    "iter": 65,
+    "composite": 65.956,
+    "best": 65.956
+  },
+  {
+    "iter": 66,
+    "composite": 66.018,
+    "best": 66.018
+  },
+  {
+    "iter": 67,
+    "composite": 66.076,
+    "best": 66.076
+  },
+  {
+    "iter": 68,
+    "composite": 66.13,
+    "best": 66.13
+  },
+  {
+    "iter": 69,
+    "composite": 66.179,
+    "best": 66.179
+  },
+  {
+    "iter": 70,
+    "composite": 66.22,
+    "best": 66.22
+  },
+  {
+    "iter": 71,
+    "composite": 66.249,
+    "best": 66.249
+  },
+  {
+    "iter": 72,
+    "composite": 66.249,
+    "best": 66.249
+  },
+  {
+    "iter": 73,
+    "composite": 66.249,
+    "best": 66.249
+  },
+  {
+    "iter": 74,
+    "composite": 66.249,
+    "best": 66.249
+  }
+]

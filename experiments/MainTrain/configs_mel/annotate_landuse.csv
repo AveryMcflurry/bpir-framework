@@ -1,0 +1,18 @@
+Description,Target,Expression
+#,, annotate landuse table after import
+#,, HDR input-composition weights (raw land-use values preserved in file; scaled at runtime)
+HDR scale peak parking,PRKCST,land_use.PRKCST * land_use.w_parking
+HDR scale offpeak parking,OPRKCST,land_use.OPRKCST * land_use.w_parking
+HDR scale terminal time,TERMINAL,land_use.TERMINAL * land_use.w_terminal
+HDR scale total employment,TOTEMP,land_use.TOTEMP * land_use.w_employment
+HDR scale retail employment,RETEMPN,land_use.RETEMPN * land_use.w_employment
+HDR scale finprof employment,FPSEMPN,land_use.FPSEMPN * land_use.w_employment
+HDR scale health employment,HEREMPN,land_use.HEREMPN * land_use.w_employment
+HDR scale other employment,OTHEMPN,land_use.OTHEMPN * land_use.w_employment
+HDR scale agric employment,AGREMPN,land_use.AGREMPN * land_use.w_employment
+HDR scale manuf employment,MWTEMPN,land_use.MWTEMPN * land_use.w_employment
+household_density,household_density,land_use.TOTHH / (land_use.RESACRE + land_use.CIACRE)
+employment_density,employment_density,land_use.TOTEMP / (land_use.RESACRE + land_use.CIACRE)
+density_index,density_index,(household_density *employment_density) / (household_density + employment_density).clip(lower=1)
+,is_cbd,land_use.area_type == 1
+

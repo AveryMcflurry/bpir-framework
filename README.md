@@ -75,3 +75,54 @@ objective from your observed targets with `bpir/objective.py`, and call the
 mechanism loops in `bpir/pws.py`, `bpir/spe.py` or `bpir/hdr.py`. The
 preprocessed author-built Melbourne inputs accompany this repository; the
 VITM model and its inputs are confidential and not included.
+
+---
+
+# Full experiments (reproduce the paper's results)
+
+The `bpir/` package above is the readable reference implementation. Everything
+needed to **run and reproduce the paper's quantitative results** is under
+`experiments/` — the exact experiment code with parameters at their reported
+defaults (all changeable via command-line flags), the deposited Melbourne
+inputs, and step-by-step commands with expected outputs and runtimes:
+
+- **`experiments/README.md` — the reproduction guide.** Start there.
+- **3-minute demo**: `experiments/HDR_Revise/reproduce_baseline.py` runs
+  ActivitySim on the deposited Melbourne baseline and reproduces the paper's
+  baseline composites.
+- **Openly downloadable end-to-end case**: the San Francisco (MTC) experiments
+  (25-zone and full 1,454-zone) run on data downloaded directly from the
+  ActivitySim consortium (`python -m activitysim create -e prototype_mtc_full`),
+  scored against published MTC marginals shipped in this repository —
+  reproducing Supplementary Note 4 end to end.
+- **Deposited data**: `experiments/melbourne/` (inputs + verification receipt +
+  the paper's optimisation artifacts); `experiments/vitm_results/` (run records
+  for the confidential VITM model, code included in full).
+
+## Environment for the experiments
+
+`environment.yml` pins the exact stack (Python 3.9.18, ActivitySim 1.1.2,
+numpy 1.23.0, pandas 2.0.0, scikit-learn 1.2.2, openmatrix 0.3.3,
+pytables 3.6.1). Install with `conda env create -f environment.yml`
+(10–15 minutes). Tested on Windows 11; no non-standard hardware (peak 8.5 GB
+RAM for full-scale San Francisco runs, ~1 GB for Melbourne).
+
+## Repository map
+
+```
+bpir/                      reference implementation (simulator-agnostic)
+examples/demo.py           seconds-long synthetic demo, no data needed
+experiments/
+  README.md                reproduction guide: commands, expected results, runtimes
+  MainTrain/               composite objective, Melbourne model configuration
+                           (configs_mel, all coefficient files), SPSA + RF benchmarks
+  HDR_Revise/              HDR / SPE / PWS drivers, SPSA (both datasets),
+                           San Francisco demos, config builder, baseline verifier
+  melbourne/               deposited baseline inputs + verification + run artifacts
+  vitm_results/            VITM campaign histories (model itself confidential)
+environment.yml            exact pinned environment
+```
+
+The manuscript's Methods (sections 4.7–4.13) give the complete formal
+description of each mechanism, and its pseudocode, as required by the
+Nature Research software policy.
