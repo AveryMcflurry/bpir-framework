@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+hdr_run/
+spe_run/
+vitm_run/
+mtc_full_run/
+spsa_run/
+vitm_tour_asc_run/
+download/
+sf/configs/
+sf/configs_bpir/
+sf/data/
+melb/data/
+vitm/
+*.omx
+*.h5

@@ -1,0 +1,15 @@
+name: bpir
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.18
+  - pip
+  - numpy=1.23.0
+  - pandas=2.0.0
+  - scikit-learn=1.2.2
+  - pytables=3.6.1
+  - psutil
+  - pip:
+      - activitysim==1.1.2
+      - openmatrix==0.3.3
+      - cma==4.0.0
